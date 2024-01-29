@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
           itemBuilder: (BuildContext context, int index) {
             //7
             //Update Recipe Card
-            return Text(Recipe.samples[index].label);
+            return buildRecipeCard(Recipe.samples[index]);
           },
         ),
       ),
@@ -73,6 +73,13 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   //ToDo: buildRecipeCard() here
+  Widget buildRecipeCard(Recipe recipe) {
+    return Card(
+      child: Column(
+        children: <Widget>[Image(image: AssetImage(recipe.imageUrl)),
+        Text(recipe.label)],
 
-
+      ),
+    );
+  }
 }

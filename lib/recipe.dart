@@ -25,11 +25,11 @@ class Recipe {
     ),
         Recipe(
       "Chocolate Chip Cookies",
-      "assets/cholateChip.jpg",
+      "assets/chocolateChip.jpg",
     ),
         Recipe(
       "Taco Salad",
-      "assets/tacoSalad.jpg",
+      "assets/tacosalad.jpg",
     ),
         Recipe(
       "Hawaiian Pizza",
